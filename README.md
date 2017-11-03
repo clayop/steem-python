@@ -6,7 +6,7 @@ You need to have `Python 3.6` or newer to install `steem-python`. Unfortunately,
 
 ``` 
 sudo apt-get update
-sudo apt-get install -y python3 python3-pip
+sudo apt-get install -y python3-dev python3-pip build-essential libssl-dev libffi-dev
 ```
 
 Then check Python version
@@ -33,13 +33,16 @@ rm /usr/bin/python
 ln -s /usr/bin/python3.6 /usr/bin/python
 ```
 
+After installation of `python3` and `pip3`, you need to install `pytest` by the following command.
+```
+pip3 install pytest
+```
 
 
 ## Installation
 You can install `steem-python` with `pip`:
 
 ```
-pip3 install -U pytest
 pip3 install -U steem
 ```
 
